@@ -1,28 +1,42 @@
 import 'package:flutter/material.dart';
 
 class MyTextfield extends StatelessWidget {
-  const MyTextfield({super.key});
+  final String text;
+  final bool hide;
+
+
+  const MyTextfield({
+    super.key,
+    required this.text,
+    required this.hide
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: TextField(
+        obscureText: hide,
         decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: Theme.of(context).colorScheme.outline,
-            ),
+          labelText: text,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: Theme.of(context).colorScheme.onPrimary,
-            ),
-          ),
-          fillColor: Theme.of(context).colorScheme.onSurfaceVariant,
           filled: true,
+          fillColor: Theme.of(context).colorScheme.surfaceVariant,
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
+            borderSide: BorderSide(
+              color: Theme.of(context).colorScheme.primary,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
+            borderSide: BorderSide(
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
+          ),
         ),
-        maxLength: 100,
       ),
     );
   }

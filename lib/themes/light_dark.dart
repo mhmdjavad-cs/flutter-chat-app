@@ -5,35 +5,53 @@ import 'package:flutter/material.dart';
 ThemeData lightMode = ThemeData(
   
   colorScheme: const ColorScheme(
-    brightness: Brightness.light,
-    primary: Color(0xFF6750A4), // Purple
-    onPrimary: Colors.white,
-    primaryContainer: Color(0xFFEADDFF), // Light Purple
-    onPrimaryContainer: Color(0xFF21005D), // Darker Purple
-    secondary: Color(0xFF625B71), // Secondary Purple
-    onSecondary: Colors.white,
-    secondaryContainer: Color(0xFFE8DEF8), // Light Secondary Purple
-    onSecondaryContainer: Color(0xFF1D192B), // Darker Secondary Purple
-    tertiary: Color(0xFF7D5260), // Tertiary Pink
-    onTertiary: Colors.white,
-    tertiaryContainer: Color(0xFFFFD8E4), // Light Tertiary Pink
-    onTertiaryContainer: Color(0xFF31111D), // Darker Tertiary Pink
-    error: Color(0xFFB3261E), // Red
-    onError: Colors.white,
-    errorContainer: Color(0xFFF9DEDC), // Light Red
-    onErrorContainer: Color(0xFF410E0B), // Darker Red
-    background: Color(0xFFFFFBFE), // Background White
-    onBackground: Color(0xFF1C1B1F), // Darker Background
-    surface: Color(0xFFFFFBFE), // Surface White
-    onSurface: Color(0xFF1C1B1F), // Darker Surface
-    surfaceVariant: Color(0xFFE7E0EC), // Light Surface Variant
-    onSurfaceVariant: Color(0xFF49454F), // Darker Surface Variant
-    outline: Color(0xFF79747E), // Outline Grey
-    shadow: Colors.black, // Shadow
-    inverseSurface: Color(0xFF313033), // Inverse Surface
-    onInverseSurface: Color(0xFFF4EFF4), // Light Inverse Surface
-    inversePrimary: Color(0xFFD0BCFF), // Inverse Primary
-  ),
+      brightness: Brightness.light,
+      primary: Color(4282474385),
+      surfaceTint: Color(4282474385),
+      onPrimary: Color(4294967295),
+      primaryContainer: Color(4292273151),
+      onPrimaryContainer: Color(4278197054),
+      secondary: Color(4283850609),
+      onSecondary: Color(4294967295),
+      secondaryContainer: Color(4292535033),
+      onSecondaryContainer: Color(4279442475),
+      tertiary: Color(4285551989),
+      onTertiary: Color(4294967295),
+      tertiaryContainer: Color(4294629629),
+      onTertiaryContainer: Color(4280816430),
+      error: Color(4290386458),
+      onError: Color(4294967295),
+      errorContainer: Color(4294957782),
+      onErrorContainer: Color(4282449922),
+      surface: Color(4294572543),
+      onSurface: Color(4279835680),
+      onSurfaceVariant: Color(4282664782),
+      outline: Color(4285822847),
+      outlineVariant: Color(4291086032),
+      shadow: Color(4278190080),
+      scrim: Color(4278190080),
+      inverseSurface: Color(4281217078),
+      inversePrimary: Color(4289382399),
+      primaryFixed: Color(4292273151),
+      onPrimaryFixed: Color(4278197054),
+      primaryFixedDim: Color(4289382399),
+      onPrimaryFixedVariant: Color(4280829815),
+      secondaryFixed: Color(4292535033),
+      onSecondaryFixed: Color(4279442475),
+      secondaryFixedDim: Color(4290692828),
+      onSecondaryFixedVariant: Color(4282271577),
+      tertiaryFixed: Color(4294629629),
+      onTertiaryFixed: Color(4280816430),
+      tertiaryFixedDim: Color(4292721888),
+      onTertiaryFixedVariant: Color(4283907676),
+      surfaceDim: Color(4292467168),
+      surfaceBright: Color(4294572543),
+      surfaceContainerLowest: Color(4294967295),
+      surfaceContainerLow: Color(4294177786),
+      surfaceContainer: Color(4293783028),
+      surfaceContainerHigh: Color(4293388526),
+      surfaceContainerHighest: Color(4293059305),
+    )
 
 
 );
@@ -41,35 +59,53 @@ ThemeData lightMode = ThemeData(
 
 ThemeData darkMode = ThemeData(
   colorScheme: const ColorScheme(
-    brightness: Brightness.dark,
-    primary: Color(0xFFD0BCFF), // Light Purple
-    onPrimary: Color(0xFF381E72), // Darker Purple
-    primaryContainer: Color(0xFF4F378B), // Dark Purple
-    onPrimaryContainer: Color(0xFFEADDFF), // Light Purple
-    secondary: Color(0xFFCCC2DC), // Light Secondary Purple
-    onSecondary: Color(0xFF332D41), // Darker Secondary Purple
-    secondaryContainer: Color(0xFF4A4458), // Dark Secondary Purple
-    onSecondaryContainer: Color(0xFFE8DEF8), // Light Secondary Purple
-    tertiary: Color(0xFFEFB8C8), // Light Tertiary Pink
-    onTertiary: Color(0xFF492532), // Darker Tertiary Pink
-    tertiaryContainer: Color(0xFF633B48), // Dark Tertiary Pink
-    onTertiaryContainer: Color(0xFFFFD8E4), // Light Tertiary Pink
-    error: Color(0xFFF2B8B5), // Light Red
-    onError: Color(0xFF601410), // Darker Red
-    errorContainer: Color(0xFF8C1D18), // Dark Red
-    onErrorContainer: Color(0xFFF9DEDC), // Light Red
-    background: Color(0xFF1C1B1F), // Background Dark
-    onBackground: Color(0xFFE6E1E5), // Lighter Background
-    surface: Color(0xFF1C1B1F), // Surface Dark
-    onSurface: Color(0xFFE6E1E5), // Lighter Surface
-    surfaceVariant: Color(0xFF49454F), // Dark Surface Variant
-    onSurfaceVariant: Color(0xFFCAC4D0), // Light Surface Variant
-    outline: Color(0xFF938F99), // Outline Grey
-    shadow: Colors.black, // Shadow
-    inverseSurface: Color(0xFFE6E1E5), // Inverse Surface
-    onInverseSurface: Color(0xFF313033), // Dark Inverse Surface
-    inversePrimary: Color(0xFF6750A4), // Dark Inverse Primary
-  ),
+      brightness: Brightness.dark,
+      primary: Color(4289382399),
+      surfaceTint: Color(4289382399),
+      onPrimary: Color(4278857823),
+      primaryContainer: Color(4280829815),
+      onPrimaryContainer: Color(4292273151),
+      secondary: Color(4290692828),
+      onSecondary: Color(4280824129),
+      secondaryContainer: Color(4282271577),
+      onSecondaryContainer: Color(4292535033),
+      tertiary: Color(4292721888),
+      onTertiary: Color(4282329156),
+      tertiaryContainer: Color(4283907676),
+      onTertiaryContainer: Color(4294629629),
+      error: Color(4294948011),
+      onError: Color(4285071365),
+      errorContainer: Color(4287823882),
+      onErrorContainer: Color(4294957782),
+      surface: Color(4279309080),
+      onSurface: Color(4293059305),
+      onSurfaceVariant: Color(4291086032),
+      outline: Color(4287533209),
+      outlineVariant: Color(4282664782),
+      shadow: Color(4278190080),
+      scrim: Color(4278190080),
+      inverseSurface: Color(4293059305),
+      inversePrimary: Color(4282474385),
+      primaryFixed: Color(4292273151),
+      onPrimaryFixed: Color(4278197054),
+      primaryFixedDim: Color(4289382399),
+      onPrimaryFixedVariant: Color(4280829815),
+      secondaryFixed: Color(4292535033),
+      onSecondaryFixed: Color(4279442475),
+      secondaryFixedDim: Color(4290692828),
+      onSecondaryFixedVariant: Color(4282271577),
+      tertiaryFixed: Color(4294629629),
+      onTertiaryFixed: Color(4280816430),
+      tertiaryFixedDim: Color(4292721888),
+      onTertiaryFixedVariant: Color(4283907676),
+      surfaceDim: Color(4279309080),
+      surfaceBright: Color(4281809214),
+      surfaceContainerLowest: Color(4278980115),
+      surfaceContainerLow: Color(4279835680),
+      surfaceContainer: Color(4280098852),
+      surfaceContainerHigh: Color(4280822319),
+      surfaceContainerHighest: Color(4281546042),
+    )
 );
 
 

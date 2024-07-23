@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_course/components/my_button.dart';
 import 'package:flutter_full_course/components/my_textfield.dart';
 
 class LoginPage extends StatelessWidget {
@@ -22,14 +23,40 @@ class LoginPage extends StatelessWidget {
                 height: 50,
               ),
               Text(
-                "wellcome back, you have been missed!",
+                "welcome back, you have been missed!",
                 style: TextStyle(
                   fontSize: 16,
                   color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
-              const SizedBox(height: 30,),
-              MyTextfield(),
+              const SizedBox(
+                height: 50,
+              ),
+              const MyTextfield(
+                text: 'Email',
+                hide: false,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const MyTextfield(
+                text: 'Password',
+                hide: true,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const MyButton(text: "Login"),
+              const SizedBox(
+                height: 5,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Not a member? "),
+                  Text("Register now!", style: TextStyle(fontWeight: FontWeight.bold),),
+                ],
+              )
             ],
           ),
         ),
